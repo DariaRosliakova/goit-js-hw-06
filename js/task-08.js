@@ -11,8 +11,8 @@ function getDataToForm(event) {
   if (email.value === "" || password.value === "") {
     return alert('Все поля должны быть заполнены.');
   }
-
-  console.log(`Email: ${email.value}, password: ${password.value}`);
+  
+  console.log({email: email.value, password: password.value});
     event.currentTarget.reset();   
 }
 
